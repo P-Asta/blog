@@ -3,7 +3,7 @@ name: Read Environment Variables and Save to File
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
