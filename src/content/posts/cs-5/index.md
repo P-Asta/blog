@@ -1,6 +1,6 @@
 ---
 title: 프록시 서버
-published: 2024-06-17
+published: 2024-06-16
 description: proxy
 image: thumb.jpg
 tags: [proxy server, nginx, https, 프록시 서버, 엔진액스]
