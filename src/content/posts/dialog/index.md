@@ -139,7 +139,13 @@ modal.addEventListener('click', (event) => {
 </details>
 
 <script>
-    document.body.innerHTML += `
+    let a = document.getElementById("open")
+    let modal = document.getElementById("modal")
+    a.addEventListener("click", () => modal.showModal())
+    modal.addEventListener('click', (event) => {
+        if (event.target.nodeName === 'DIALOG') { modal.close() }
+    });
+document.body.innerHTML += `
 <style>
     .primary-click {
         color: #0062ff;
@@ -191,7 +197,7 @@ modal.addEventListener('click', (event) => {
                 opacity: 0;
             }
         }
-        opacity: 1;
+        opacity: 1 !important;
         transform: translateX(-50%) translateY(-50%);
         &::backdrop {
             opacity: 1;
@@ -207,12 +213,6 @@ modal.addEventListener('click', (event) => {
         padding: 20px;
         border-radius: 4px;
     }
-</style>`
-    let a = document.getElementById("open")
-    let modal = document.getElementById("modal")
-    a.addEventListener("click", () => modal.showModal())
-    modal.addEventListener('click', (event) => {
-        if (event.target.nodeName === 'DIALOG') { modal.close() }
-    });
-
+    </style>
+`
 </script>
