@@ -107,6 +107,7 @@ modal.addEventListener('click', (event) => {
             transition: all .5s allow-discrete;
         }  
     }
+    
 
     /* 다이얼로그 열림 상태 스타일 */
     dialog[open] {
