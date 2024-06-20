@@ -139,15 +139,7 @@ modal.addEventListener('click', (event) => {
 </details>
 
 <script>
-    let a = document.getElementById("open")
-    let modal = document.getElementById("modal")
-    a.addEventListener("click", () => modal.showModal())
-    modal.addEventListener('click', (event) => {
-        if (event.target.nodeName === 'DIALOG') { modal.close() }
-    });
-
-</script>
-
+    document.body.innerHTML += `
 <style>
     .primary-click {
         color: #0062ff;
@@ -215,4 +207,12 @@ modal.addEventListener('click', (event) => {
         padding: 20px;
         border-radius: 4px;
     }
-</style>
+</style>`
+    let a = document.getElementById("open")
+    let modal = document.getElementById("modal")
+    a.addEventListener("click", () => modal.showModal())
+    modal.addEventListener('click', (event) => {
+        if (event.target.nodeName === 'DIALOG') { modal.close() }
+    });
+
+</script>
