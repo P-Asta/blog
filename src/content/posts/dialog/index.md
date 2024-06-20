@@ -107,7 +107,6 @@ modal.addEventListener('click', (event) => {
             transition: all .5s allow-discrete;
         }  
     }
-    
 
     /* 다이얼로그 열림 상태 스타일 */
     dialog[open] {
@@ -118,10 +117,10 @@ modal.addEventListener('click', (event) => {
                 opacity: 0;
             }
         }
-        opacity: 1 !important;
+        opacity: 1;
         transform: translateX(-50%) translateY(-50%);
         &::backdrop {
-            opacity: 1 !important;
+            opacity: 1;
         }
     }
     /* 폼 스타일 */
@@ -137,13 +136,7 @@ modal.addEventListener('click', (event) => {
     }
 </style>
 ```
-
-
-
-
-
-
-
+</details>
 
 <script>
     let a = document.getElementById("open")
@@ -223,5 +216,3 @@ modal.addEventListener('click', (event) => {
         border-radius: 4px;
     }
 </style>
-
-</details>
