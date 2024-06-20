@@ -111,6 +111,9 @@ debian
 ```shell
 sudo apt-get install letsencrypt
 ```
+:::important
+![](cert.jpg)
+:::
 
 ### 활성화
 nginx가 잘 작동한다면 다음과 같은 명령어를 사용해서 설정할수 있습니다.<br>
