@@ -117,10 +117,10 @@ modal.addEventListener('click', (event) => {
                 opacity: 0;
             }
         }
-        opacity: 1;
+        opacity: 1 !important;
         transform: translateX(-50%) translateY(-50%);
         &::backdrop {
-            opacity: 1;
+            opacity: 1 !important;
         }
     }
     /* 폼 스타일 */
