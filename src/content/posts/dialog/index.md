@@ -190,7 +190,6 @@ modal.addEventListener('click', (event) => {
             transition: all .5s allow-discrete;
         }  
     }
-
     dialog[open] {
         @starting-style {
             opacity: 0;
