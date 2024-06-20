@@ -145,7 +145,9 @@ modal.addEventListener('click', (event) => {
     modal.addEventListener('click', (event) => {
         if (event.target.nodeName === 'DIALOG') { modal.close() }
     });
-document.body.innerHTML += `
+</script>
+
+<!-- document.body.innerHTML += ` -->
 <style>
     .primary-click {
         color: #0062ff;
@@ -214,5 +216,4 @@ document.body.innerHTML += `
         border-radius: 4px;
     }
     </style>
-`
-</script>
+<!-- ` -->
