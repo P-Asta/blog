@@ -139,7 +139,8 @@ modal.addEventListener('click', (event) => {
 </details>
 
 <script>
-    let a = document.getElementById("open")
+    window.onload = () => {
+           let a = document.getElementById("open")
     let modal = document.getElementById("modal")
     a.addEventListener("click", () => modal.showModal())
     modal.addEventListener('click', (event) => {
@@ -149,6 +150,11 @@ modal.addEventListener('click', (event) => {
     document.getElementById("pr-style").innerHTML += `
 <style>
     dialog[open] {
+        opacity: 1 !important;
+        transform: translateX(-50%) translateY(-50%);
+        &::backdrop {
+            opacity: 1;
+        }
         @starting-style {
             opacity: 0 !important;
             transform: translateX(-50%) translateY(-60%);
@@ -156,14 +162,11 @@ modal.addEventListener('click', (event) => {
                 opacity: 0;
             }
         }
-        opacity: 1 !important;
-        transform: translateX(-50%) translateY(-50%);
-        &::backdrop {
-            opacity: 1;
-        }
     }
-</style>
+    </style>
     `
+    }
+ 
 </script>
 
 <!-- document.body.innerHTML += ` -->
