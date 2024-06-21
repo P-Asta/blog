@@ -189,19 +189,19 @@ modal.addEventListener('click', (event) => {
             opacity: 0;
             transition: all .5s allow-discrete;
         }  
-    }
-    dialog[open] {
-        @starting-style {
-            opacity: 0;
-            transform: translateX(-50%) translateY(-60%);
-            &::backdrop {
+        &[open] {
+            @starting-style {
                 opacity: 0;
+                transform: translateX(-50%) translateY(-60%);
+                &::backdrop {
+                    opacity: 0;
+                }
             }
-        }
-        opacity: 1 !important;
-        transform: translateX(-50%) translateY(-50%);
-        &::backdrop {
-            opacity: 1;
+            opacity: 1 !important;
+            transform: translateX(-50%) translateY(-50%);
+            &::backdrop {
+                opacity: 1;
+            }
         }
     }
     form {
