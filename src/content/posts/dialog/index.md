@@ -8,7 +8,7 @@ category: gleam
 draft: false
 ---
 # DIALOG
-코드는 아래 있습니다 (<button id="open"><code>클릭하여 모달 열기</code></button>)
+코드는 아래 있습니다 (<button id="open1"><code>클릭하여 모달 열기</code></button>)
 
 <dialog id="modal">
     <form method="dialog">
@@ -34,7 +34,7 @@ modal.addEventListener('click', (event) => {
 });
 ```
 
-<button id="open"><code>클릭하여 모달 열기</code></button>
+<button id="open2"><code>클릭하여 모달 열기</code></button>
 
 <details>
 <summary> 코드 보기</summary>
@@ -140,15 +140,14 @@ modal.addEventListener('click', (event) => {
 
 <script>
     window.onload = () => {
-           let a = document.getElementById("open")
     let modal = document.getElementById("modal")
-    a.addEventListener("click", () => modal.showModal())
+    document.getElementById("open1").addEventListener("click", () => modal.showModal())
+    document.getElementById("open2").addEventListener("click", () => modal.showModal())
     modal.addEventListener('click', (event) => {
         if (event.target.nodeName === 'DIALOG') { modal.close() }
     });
     console.log(document.body)
     document.getElementById("pr-style").innerHTML += `
-<style>
     dialog[open] {
         opacity: 1 !important;
         transform: translateX(-50%) translateY(-50%);
@@ -163,7 +162,6 @@ modal.addEventListener('click', (event) => {
             }
         }
     }
-    </style>
     `
     }
  
