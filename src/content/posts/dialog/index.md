@@ -148,46 +148,21 @@ modal.addEventListener('click', (event) => {
     });
     console.log(document.body)
     document.getElementById("pr-style").innerHTML += `
-    dialog[open] {
-        opacity: 1 !important;
-        transform: translateX(-50%) translateY(-50%);
-        &::backdrop {
-            opacity: 1;
-        }
-        @starting-style {
-            opacity: 0 !important;
-            transform: translateX(-50%) translateY(-60%);
-            &::backdrop {
-                opacity: 0;
-            }
-        }
-    }
-    dialog {
-        position: absolute;
-        background-color: #fff !important;
-    }
-    `
-    }
- 
-</script>
-
-<!-- document.body.innerHTML += ` -->
-<style id="pr-style">
     .primary-click {
-        color: #0062ff;
-        transition: background-color 0.2s, transform 0.2s;
+        color: #0062ff !important;
+        transition: background-color 0.2s, transform 0.2s !important;
         cursor: pointer;
         border-radius: 4px;
         &:hover {
-            background-color: #0062ff5b;
+            background-color: #0062ff5b !important;
         }
         &:active {
             transform: scale(0.98);
         }
     }
     dialog {
-        position: absolute;
-        background-color: #fff;
+        position: absolute !important;
+        background-color: #fff !important;
         width: 400px;
         height: 200px;
         opacity: 0;
@@ -203,7 +178,7 @@ modal.addEventListener('click', (event) => {
             font-size: 16px;
             padding: 8px;
             border-radius: 4px;
-            background-color: #0062ff27;
+            background-color: #0062ff27 !important;
             font-weight: bold;
             border: 0;
             cursor: pointer;
@@ -238,5 +213,12 @@ modal.addEventListener('click', (event) => {
         padding: 20px;
         border-radius: 4px;
     }
+    `
+    }
+ 
+</script>
+
+<!-- document.body.innerHTML += ` -->
+<style id="pr-style">
 </style>
 <!-- ` -->
