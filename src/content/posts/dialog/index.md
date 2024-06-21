@@ -145,79 +145,29 @@ modal.addEventListener('click', (event) => {
     modal.addEventListener('click', (event) => {
         if (event.target.nodeName === 'DIALOG') { modal.close() }
     });
-    document.body.innerHTML = `
+    console.log(document.body)
+    document.getElementById("pr-style").innerHTML += `
 <style>
-    .primary-click {
-        color: #0062ff;
-        transition: background-color 0.2s, transform 0.2s;
-        cursor: pointer;
-        border-radius: 4px;
-        &:hover {
-            background-color: #0062ff5b;
-        }
-        &:active {
-            transform: scale(0.98);
-        }
-    }
-    dialog {
-        position: absolute;
-        background-color: #fff;
-        width: 400px;
-        height: 200px;
-        opacity: 0;
-        transition: all .5s;
-        transform: translateX(-40%) translateY(-50%);
-        top: 50%;
-        left: 50%;
-        border-radius: 8px;
-        border: 0;
-
-        > form > button {
-            margin-top: 16px;
-            font-size: 16px;
-            padding: 8px;
-            border-radius: 4px;
-            background-color: #0062ff27;
-            font-weight: bold;
-            border: 0;
-            cursor: pointer;
-        }
-        transition-behavior: allow-discrete;
-        &::backdrop {
-            opacity: 0;
-            transition: all .5s allow-discrete;
-        }  
-        &[open] {
-            @starting-style {
-                opacity: 0 !important;
-                transform: translateX(-50%) translateY(-60%);
-                &::backdrop {
-                    opacity: 0;
-                }
-            }
-            opacity: 1 !important;
-            transform: translateX(-50%) translateY(-50%);
+    dialog[open] {
+        @starting-style {
+            opacity: 0 !important;
+            transform: translateX(-50%) translateY(-60%);
             &::backdrop {
-                opacity: 1;
+                opacity: 0;
             }
         }
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        max-width: 800px;
-        padding: 20px;
-        border-radius: 4px;
+        opacity: 1 !important;
+        transform: translateX(-50%) translateY(-50%);
+        &::backdrop {
+            opacity: 1;
+        }
     }
 </style>
     `
 </script>
 
 <!-- document.body.innerHTML += ` -->
-<style>
+<style id="pr-style">
     .primary-click {
         color: #0062ff;
         transition: background-color 0.2s, transform 0.2s;
