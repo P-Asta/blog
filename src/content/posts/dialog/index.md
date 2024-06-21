@@ -162,6 +162,10 @@ modal.addEventListener('click', (event) => {
             }
         }
     }
+    dialog {
+        position: absolute;
+        background-color: #fff !important;
+    }
     `
     }
  
