@@ -78,7 +78,7 @@ modal.addEventListener('click', (event) => {
     }
     /* 다이얼로그 기본 스타일 */
     dialog {
-        position: absolute;
+        position: fixed;
         background-color: #fff;
         width: 400px;
         height: 200px;
@@ -161,7 +161,7 @@ modal.addEventListener('click', (event) => {
         }
     }
     dialog {
-        position: absolute !important;
+        position: fixed !important;
         background-color: #fff !important;
         width: 400px;
         height: 200px;
