@@ -191,7 +191,7 @@ modal.addEventListener('click', (event) => {
         }  
         &[open] {
             @starting-style {
-                opacity: 0;
+                opacity: 0 !important;
                 transform: translateX(-50%) translateY(-60%);
                 &::backdrop {
                     opacity: 0;
