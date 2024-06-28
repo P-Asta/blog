@@ -221,7 +221,7 @@ impl LifeOfGame {
 ## 빌드하기
 이제 wasm의 코드를 다 만들었으니 이 코드를 빌드해보자<br/>
 아레 코드를쓰면 웹에서 쓸수있는 wasm이 `pkgs`폴더에 빌드될거다.
-```fish
+```shell
 wasm-pack build --target web
 ```
 

@@ -9,7 +9,7 @@ draft: false
 ---
 
 # 베비 설치
-```fish
+```shell
 cargo new zero2bevy
 cd zero2bevy
 cargo add bevy

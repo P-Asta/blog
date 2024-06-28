@@ -14,7 +14,7 @@ gleam은 erlang환경에서 돌아가는 언어다(elixir처럼)
 
 ## gleam install
 - window
-```fish
+```shell
 scoop install gleam
 ```
 

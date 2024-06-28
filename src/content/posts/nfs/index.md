@@ -13,11 +13,11 @@ udp와 tcp통신을 둘다 지원하며, 인터넷 속도가 느리다면 udp로
 
 # 설치하기
 arch
-```fish
+```shell
 yay -S nfs-utils
 ```
 debian
-```fish
+```shell
 sudo apt install nfs-kernel-server
 ```
 
@@ -61,7 +61,7 @@ sudo systemctl enable --now nfs-server.service
 
 ## 폴더 만들기
 먼저 `mkdir`을 사용해 연결(mount)할 폴더를 만들어준다.
-```fish
+```shell
 mkdir myServer
 ```
 
@@ -88,7 +88,7 @@ sudo umount /Users/realsus/myServer
 ```
 ## 쉽게 연결할수있는 쉘파일 작성
 나는 연결이 끊길때마다 다시명령어를 쓰는게 귀찮아서 아레와 같은 쉘 코드를 만들어놨다.
-```fish
+```shell
 #!/bin/bash
 MOUNT_PATH="/Users/realsus/Server"
 echo $MOUNT_PATH
