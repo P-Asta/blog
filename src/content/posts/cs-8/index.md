@@ -1,6 +1,6 @@
 ---
 title: mvvm
-published: 2024-07-09
+published: 2024-07-10
 description: model view view-model
 image: thumb.jpg
 tags: [design pattern, mvvm, 디자인 패턴]
