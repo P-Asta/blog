@@ -28,7 +28,7 @@ import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-cop
 export default defineConfig({
   site: "https://blog.asta.rs/",
   base: "/",
-  trailingSlash: "always",
+  trailingSlash: "ignore",
   integrations: [
     tailwind({
       nesting: true,
