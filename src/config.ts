@@ -39,14 +39,13 @@ export const siteConfig: SiteConfig = {
 
 export const navBarConfig: NavBarConfig = {
   links: [
-    LinkPreset.Home,
-    LinkPreset.Archive,
-    LinkPreset.About,
-    {
-      name: "GitHub",
-      url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
-      external: true, // Show an external link icon and will open in a new tab
-    },
+    // LinkPreset.Archive,
+    // LinkPreset.About,
+    // {
+    //   name: "GitHub",
+    //   url: "https://github.com/P-Asta/blogfuwari", // Internal links should not include the base path, as it is automatically added
+    //   external: true, // Show an external link icon and will open in a new tab
+    // },
   ],
 };
 
